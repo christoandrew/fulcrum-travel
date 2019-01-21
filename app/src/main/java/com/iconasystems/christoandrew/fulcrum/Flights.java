@@ -67,12 +67,13 @@ public class Flights extends FragmentActivity implements OnMapReadyCallback {
 
         route = getRoute(flightList);
 
-
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        LatLng startPoint = route.get(0);
+        LatLng endPoint = route.get(route.size()-1);
 
         LatLngBounds.Builder builder = new LatLngBounds.Builder();
         for (LatLng latLng : route) {
@@ -97,6 +98,12 @@ public class Flights extends FragmentActivity implements OnMapReadyCallback {
                 googleMap.animateCamera(cu);
             }
         });
+
+        googleMap.addMarker(new MarkerOptions().position(startPoint)
+                .title("Origin"));
+
+        googleMap.addMarker(new MarkerOptions().position(endPoint)
+                .title("Destination"));
 
     }
 
@@ -180,6 +187,7 @@ public class Flights extends FragmentActivity implements OnMapReadyCallback {
                     @Override
                     public void onFailure(Call<AirportResponse> call, Throwable t) {
                         t.printStackTrace();
+
                     }
                 });
 
