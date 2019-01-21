@@ -1,0 +1,460 @@
+{
+  "ScheduleResource": {
+    "Schedule": [{
+      "TotalJourney": {
+        "Duration": "PT2H5M"
+      },
+      "Flight": [{
+        "Departure": {
+          "AirportCode": "AAL",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T06:20"
+          }
+        },
+        "Arrival": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T07:05"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 1228
+        },
+        "Equipment": {
+          "AircraftCode": 319
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }, {
+        "Departure": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T07:45"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "Arrival": {
+          "AirportCode": "AAR",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T08:25"
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 1243
+        },
+        "OperatingCarrier": {
+          "AirlineID": "EE"
+        },
+        "Equipment": {
+          "AircraftCode": "AT7"
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }]
+    }, {
+      "TotalJourney": {
+        "Duration": "PT3H50M"
+      },
+      "Flight": [{
+        "Departure": {
+          "AirportCode": "AAL",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T06:20"
+          }
+        },
+        "Arrival": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T07:05"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 1228
+        },
+        "Equipment": {
+          "AircraftCode": 319
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }, {
+        "Departure": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T09:30"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "Arrival": {
+          "AirportCode": "AAR",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T10:10"
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 1245
+        },
+        "OperatingCarrier": {
+          "AirlineID": "EE"
+        },
+        "Equipment": {
+          "AircraftCode": "AT7"
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }]
+    }, {
+      "TotalJourney": {
+        "Duration": "PT9H5M"
+      },
+      "Flight": [{
+        "Departure": {
+          "AirportCode": "AAL",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T06:20"
+          }
+        },
+        "Arrival": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T07:05"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 1228
+        },
+        "Equipment": {
+          "AircraftCode": 319
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }, {
+        "Departure": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T14:45"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "Arrival": {
+          "AirportCode": "AAR",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T15:25"
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 1257
+        },
+        "OperatingCarrier": {
+          "AirlineID": "EE"
+        },
+        "Equipment": {
+          "AircraftCode": "AT7"
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }]
+    }, {
+      "TotalJourney": {
+        "Duration": "PT12H5M"
+      },
+      "Flight": [{
+        "Departure": {
+          "AirportCode": "AAL",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T06:20"
+          }
+        },
+        "Arrival": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T07:05"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 1228
+        },
+        "Equipment": {
+          "AircraftCode": 319
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }, {
+        "Departure": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T08:15"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "Arrival": {
+          "AirportCode": "GOT",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T09:05"
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 434
+        },
+        "Equipment": {
+          "AircraftCode": 320
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }, {
+        "Departure": {
+          "AirportCode": "GOT",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T17:50"
+          }
+        },
+        "Arrival": {
+          "AirportCode": "AAR",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T18:25"
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "BA",
+          "FlightNumber": 8284
+        },
+        "OperatingCarrier": {
+          "AirlineID": "EZ"
+        },
+        "Equipment": {
+          "AircraftCode": "FRJ"
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }]
+    }, {
+      "TotalJourney": {
+        "Duration": "PT12H5M"
+      },
+      "Flight": [{
+        "Departure": {
+          "AirportCode": "AAL",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T06:20"
+          }
+        },
+        "Arrival": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T07:05"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 1228
+        },
+        "Equipment": {
+          "AircraftCode": 319
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }, {
+        "Departure": {
+          "AirportCode": "CPH",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T11:35"
+          },
+          "Terminal": {
+            "Name": 3
+          }
+        },
+        "Arrival": {
+          "AirportCode": "GOT",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T12:25"
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "SK",
+          "FlightNumber": 436
+        },
+        "OperatingCarrier": {
+          "AirlineID": "WX"
+        },
+        "Equipment": {
+          "AircraftCode": "CR9"
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }, {
+        "Departure": {
+          "AirportCode": "GOT",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T17:50"
+          }
+        },
+        "Arrival": {
+          "AirportCode": "AAR",
+          "ScheduledTimeLocal": {
+            "DateTime": "2019-02-21T18:25"
+          }
+        },
+        "MarketingCarrier": {
+          "AirlineID": "BA",
+          "FlightNumber": 8284
+        },
+        "OperatingCarrier": {
+          "AirlineID": "EZ"
+        },
+        "Equipment": {
+          "AircraftCode": "FRJ"
+        },
+        "Details": {
+          "Stops": {
+            "StopQuantity": 0
+          },
+          "DaysOfOperation": 4,
+          "DatePeriod": {
+            "Effective": "2019-02-21",
+            "Expiration": "2019-02-21"
+          }
+        }
+      }]
+    }],
+    "Meta": {
+      "@Version": "1.0.0",
+      "Link": [{
+        "@Href": "https:\/\/api.lufthansa.com\/v1\/operations\/schedules\/AAL\/AAR\/2019-02-21?limit=100&directFlights=0",
+        "@Rel": "self"
+      }, {
+        "@Href": "https:\/\/api.lufthansa.com\/v1\/operations\/schedules\/AAL\/AAR\/2019-02-20?limit=20&directFlights=0&offset=0",
+        "@Rel": "previousRange"
+      }, {
+        "@Href": "https:\/\/api.lufthansa.com\/v1\/operations\/schedules\/AAL\/AAR\/2019-02-21?limit=20&directFlights=0&offset=20",
+        "@Rel": "next"
+      }, {
+        "@Href": "https:\/\/api.lufthansa.com\/v1\/operations\/schedules\/AAL\/AAR\/2019-02-21?limit=20&directFlights=0&offset=0",
+        "@Rel": "nextRange"
+      }, {
+        "@Href": "https:\/\/api.lufthansa.com\/v1\/references\/airports\/{airportCode}",
+        "@Rel": "related"
+      }, {
+        "@Href": "https:\/\/api.lufthansa.com\/v1\/references\/aircraft\/{aircraftCode}",
+        "@Rel": "related"
+      }]
+    }
+  }
+}

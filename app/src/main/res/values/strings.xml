@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fulcrum Travel</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_select_airport">Select Airport</string>
+    <string name="title_activity_splash_screen">Loading</string>
+    <string name="title_activity_flight_schedules">Flight Schedules</string>
+    <string name="title_activity_flights">Flights</string>
+</resources>
