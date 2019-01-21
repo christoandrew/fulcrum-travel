@@ -3,6 +3,7 @@ package com.iconasystems.christoandrew.fulcrum;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -35,6 +36,9 @@ public class SelectAirport extends AppCompatActivity {
     private ProgressBar loader;
 
     private static final String TAG = Home.class.getSimpleName();
+    private ApiService apiService;
+    private RecyclerView mAirportsRecyclerView;
+    private Snackbar error;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +49,7 @@ public class SelectAirport extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
-        RecyclerView mAirportsRecyclerView = findViewById(R.id.airports_list);
+        mAirportsRecyclerView = findViewById(R.id.airports_list);
         mAirportsRecyclerView.setHasFixedSize(true);
         mAirportsRecyclerView.setLayoutManager(mLayoutManager);
         mAirportsRecyclerView.addItemDecoration(new SimpleItemDividerDecoration(this));
@@ -59,10 +63,23 @@ public class SelectAirport extends AppCompatActivity {
         AuthInterceptor authInterceptor = new AuthInterceptor(tokenViewModel.getToken().getToken());
         ApiClient client = new ApiClient();
         client.addInterceptor(authInterceptor);
-        ApiService apiService = client.getClient(builder).create(ApiService.class);
+        apiService = client.getClient(builder).create(ApiService.class);
 
+        error = Snackbar.make(mAirportsRecyclerView.getRootView(), "Error loading airports",
+                Snackbar.LENGTH_LONG)
+                .setAction("Retry", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getAirports();
+                    }
+                });
+
+        getAirports();
+
+    }
+
+    private void getAirports(){
         Call<AirportsResponse> airportListCall = apiService.getAirports();
-
         airportListCall.enqueue(new Callback<AirportsResponse>() {
             @Override
             public void onResponse(Call<AirportsResponse> call, Response<AirportsResponse> response) {
@@ -91,6 +108,10 @@ public class SelectAirport extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<AirportsResponse> call, Throwable t) {
+                loader.setVisibility(View.GONE);
+                mAirportsRecyclerView.setVisibility(View.VISIBLE);
+                finish();
+                error.show();
                 Log.d(TAG, t.getMessage());
                 t.printStackTrace();
             }
