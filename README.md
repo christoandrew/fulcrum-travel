@@ -1,2 +1,2 @@
 # fulcrum-travel
-Lufthansa Android Consume API Demo
+Lufthansa Android Consume API
